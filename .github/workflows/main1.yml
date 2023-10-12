@@ -1,12 +1,8 @@
-name: Git Hub 
+name: Git Hub Access Demo
 on: [push]
-
 jobs:
-Test:
+  my-job:
     runs-on: ubuntu-latest
     steps:
-    - run: echo "the job ${{github.event_name}} event."
-  
-     
-     
-     
+      - name: my-step
+        run: echo "the job ${{github.event_name}} event." 
