@@ -1,0 +1,12 @@
+name: Git Hub 
+on: [push]
+
+jobs:
+Test:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo "the job ${{github.event_name}} event."
+  
+     
+     
+     
